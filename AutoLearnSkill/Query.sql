@@ -1,0 +1,8 @@
+-- DROP TABLE dbo.MSC_AutoLearnSkill;
+
+CREATE TABLE dbo.MSC_AutoLearnSkill (
+	Id bigint IDENTITY(1,1) NOT NULL,
+	Name varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	List text COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	CONSTRAINT PK__MSC_AUTO__3214EC0747AC11BB PRIMARY KEY (Id)
+);

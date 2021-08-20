@@ -1,0 +1,122 @@
+<!-- rei do pvp -->
+                    
+                    
+                    <!-- Rafael Gostoso -->
+							
+							<?php 
+								try {
+								   $hostname = "ip";
+								   $port = 1433;
+								   $dbname = "MuOnline";
+								   $username = "sa";
+								   $pw = "senha";
+								   $dbh = new PDO ("dblib:host=$hostname:$port;dbname=$dbname","$username","$pw");
+								 } catch (PDOException $e) {
+								   echo "Failed to get DB handle: " . $e->getMessage() . "\n";
+								   exit;
+								 }
+								 
+								$stmt = $dbh->prepare("SELECT * FROM MuCastle_DATA");
+								$stmt->execute();
+								$ObeliskGroup = $stmt->fetch();
+
+                                $stmt = $dbh->prepare("SELECT TOP 1 Name,cLevel,Reicode,ResetCount,MasterResetCount,Class FROM [MuOnline].dbo.Character WHERE ReiCode=1");								
+                                $stmt->execute();
+								$ReiPVP = $stmt->fetch();
+								
+                                
+								if ($ReiPVP == NULL) {
+                                    $ReiPVP_Name = "Nobody";
+                                }
+                                else {
+                                    $ReiPVP_Name = $ReiPVP['Name'];
+                                    $ReiPVP_cLevel = $ReiPVP['cLevel'];
+                                    $ReiPVP_ResetCount = $ReiPVP['ResetCount'];
+                                    $ReiPVP_MasterResetCount = $ReiPVP['MasterResetCount'];
+									$ReiPVP_Class = $ReiPVP['Class'];
+									$stmt = $dbh->prepare("SELECT MasterLevel FROM [MuOnline].dbo.MasterSkillTree WHERE Name = '$ReiPVP_Name'");								
+									$stmt->execute();
+									$ReiPVP_MasterLevel = $stmt->fetch();
+									$ReiPVP_MLevel = $ReiPVP_MasterLevel['MasterLevel'];									
+									$ReiPVP_Level = $ReiPVP_cLevel + $ReiPVP_MLevel;
+                                }
+					
+								
+								unset($dbh); 
+								unset($stmt);
+								
+                            ?>
+							<div class="widget red-dark" style="position:relative">
+								<div class="widget-title">
+									REI DO PVP <span>O REI DO MU ÉPICO</span>
+								</div>
+								<div id="top_guilds" style="text-align: center;">
+
+									<center style="height: 220px;">
+										<img width="" src="https://razormu.net/images/clases/kingOfPvp.png" style="" alt="">
+                                        
+                                       <?php
+
+                                   		if (($ReiPVP_Class <= 67) && ($ReiPVP_Class >= 64)){    
+                            $link = "https://razormu.net/images/clases/DLFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class <= 3) || ($ReiPVP_Class == 7)) {
+                            $link = "https://razormu.net/images/clases/SMFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 16) && ($ReiPVP_Class <= 23)) {
+                            $link = "https://razormu.net/images/clases/BKFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 32) && ($ReiPVP_Class <= 39)) {
+                            $link = "https://razormu.net/images/clases/ELFFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 48) && ($ReiPVP_Class <= 51)) {
+                            $link = "https://razormu.net/images/clases/MGFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 64) && ($ReiPVP_Class <= 67)) {
+                            $link = "https://razormu.net/images/clases/DLFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 80) && ($ReiPVP_Class <= 87)) {
+                            $link = "https://razormu.net/images/clases/SUMFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 96) && ($ReiPVP_Class <= 99)) {
+                            $link = "https://razormu.net/images/clases/RFFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 112) && ($ReiPVP_Class <= 118)) {
+                            $link = "https://razormu.net/images/clases/GLFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 128) && ($ReiPVP_Class <= 135)) {
+                                $link = "https://razormu.net/images/clases/RWFINAL.png"; 
+                            }else
+                            $link = "https://razormu.net/images/clases/sl.png"; 
+										
+
+
+        								?>
+
+                                        <img width="" src="<?php echo $link; ?>" style="bottom: 128px;position: absolute; left: 80px" alt="">
+									</center>
+                                    
+                               
+										       <div style="text-overflow: clip;font-family: monospace;color: #ffffff;position: absolute;bottom: 109px;font-size: 15;left: 0; right: 0">
+												 
+												 <?php echo $ReiPVP_Name; ?>
+												</div>
+									 
+									<ul class="top-block guild">			
+                                        <li class="top-list">
+                                        	<div style="float: left; width: 100%; text-align: left; padding-left: 20px;">
+                                        		Resets
+                                        	</div>
+                                        	<div style="float: right; padding-right: 20px;">
+                                        		<?php echo $ReiPVP_ResetCount; ?>
+                                        	</div>
+                                        </li>
+                                        </ul>
+								</div>
+							</div>
+                    
+                    
+                    
+                    
+                    
+                    <!-- fim -->

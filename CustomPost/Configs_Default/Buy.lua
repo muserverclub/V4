@@ -1,0 +1,9 @@
+CustomPost[116] = {} -- Setup Initiator
+CustomPost[116].Global = true -- true > Global Message | false > Local Message
+CustomPost[116].ShowOnChat = true -- true > show message in chat box | false > not show
+CustomPost[116].ShowOnScreen = false -- true > show message on center of screen | false > not show
+CustomPost[116].Message = 2003 -- message id in Message.txt
+CustomPost[116].CountDown = {30, 30, 30, 30} -- delay time to use again
+CustomPost[116].ReqMoney = {20000, 15000, 10000, 10000} -- Requeriments
+CustomPost[116].DiscordType = "buy" -- Type of post used in Discord
+CustomPost[116].DiscordMessageId = 2007 -- message ID used by discord

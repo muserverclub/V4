@@ -1,0 +1,37 @@
+-- DROP TABLE dbo.greed_huntpoint;
+
+CREATE TABLE dbo.greed_huntpoint
+(
+	name varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	huntpoint bigint DEFAULT 0 NOT NULL,
+	monsters bigint DEFAULT 0 NOT NULL,
+	weekmonsters bigint DEFAULT 0 NOT NULL,
+	buffs text COLLATE SQL_Latin1_General_CP1_CI_AS DEFAULT '' NOT NULL,
+	inactive int DEFAULT 0 NOT NULL,
+	quest text COLLATE SQL_Latin1_General_CP1_CI_AS DEFAULT '' NOT NULL,
+	invisibletime int DEFAULT 0 NOT NULL,
+	battletime int DEFAULT 0 NOT NULL,
+	killcache int DEFAULT 0 NOT NULL,
+	killdelay int DEFAULT 0 NOT NULL,
+	pklevel int DEFAULT 3 NOT NULL,
+	pkcount int DEFAULT 0 NOT NULL,
+	battlebuff int DEFAULT 0 NOT NULL,
+	battlebuffdelay int DEFAULT 0 NOT NULL,
+	Disabled bit DEFAULT 0 NOT NULL,
+	BlackDragon bit DEFAULT 0 NOT NULL,
+	Ashcrow bit DEFAULT 0 NOT NULL,
+	Eclipse bit DEFAULT 0 NOT NULL,
+	DarkPhoenix bit DEFAULT 0 NOT NULL,
+	GrandSoul bit DEFAULT 0 NOT NULL,
+	HolySpirit bit DEFAULT 0 NOT NULL,
+	DarkSteel bit DEFAULT 0 NOT NULL,
+	RedSpirit bit DEFAULT 0 NOT NULL,
+	Staff bit DEFAULT 0 NOT NULL,
+	Sword bit DEFAULT 0 NOT NULL,
+	Scepter bit DEFAULT 0 NOT NULL,
+	Shield bit DEFAULT 0 NOT NULL,
+	CrossBow bit DEFAULT 0 NOT NULL,
+	StickBook bit DEFAULT 0 NOT NULL,
+	SpearMace bit DEFAULT 0 NOT NULL,
+	BowAxe bit DEFAULT 0 NOT NULL
+);

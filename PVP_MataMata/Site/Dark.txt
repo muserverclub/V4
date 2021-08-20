@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title><?= config('site.title') ?></title>
+    <link rel="icon" href="<?= asset_to('/favicon.ico') ?>" />
+    <meta name="csrf-token" content="<?= csrf_token() ?>">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="<?= resource_to('/css/morpheus.min.css') ?>" rel="stylesheet" />
+    <link href="<?= asset_to('/bb-css/css-reset.css') ?>" rel="stylesheet">
+    <link href="<?= asset_to('/bb-css/style.css') ?>" rel="stylesheet">
+    <link href="<?= asset_to('/bb-css/custom-darks.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <?= fetch('css') ?>
+    <script type="text/javascript" src="<?= resource_to('/js/jquery.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= resource_to('/js/morpheus.min.js') ?>"></script>
+    <script>
+        $(function () {
+            $.morpheus.base_path = '<?= url_to('/') ?>';
+            $.morpheus.logo = '<?= util('Server')->logo() ?>';
+            $.morpheus.server_name = '<?= config('server.name') ?>';
+            <?php if (plugin_active('Events')): ?>
+                $.morpheus.events.template_spotlight = '<a href="" class="top-guild top-block" title="" style="border-top: 0px;"><span>{name}</span><span></span> <span><span class="offline">{countdown}</span></span></a>';
+                // $.morpheus.events.template_spotlight = '<li><table><tr style="background: transparent;"><td style="border: 0px; background: transparent;"><a href="">{name}</a></td><td style="border: 0px; text-align: right; background: transparent;"><span>Start in {countdown}</span></td></tr></table></li>'
+            <?php endif ?>
+        });
+    </script>
+    <?= fetch('script') ?>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="<?= asset_to('/bb-images/logo.png') ?>" alt=""></a>
+            </div>
+            <?php
+            $max = array_sum(util('Hash')->extract(config('servers', []), '{s}.max'));
+            $total = count(server()->getCharactersOnline());
+            ?>
+            <div class="server-block online">
+                <a href="<?= url_to('/players-online') ?>" style="text-transform: uppercase;"><?= config('server.name') ?> <span></span></p></a>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar" style="width:<?= util('Number')->percent($total, $max) ?>%;">
+                    </div>
+                </div>
+                <div class="server-status" style="text-transform: capitalize;">
+                  <a href="<?= url_to('/players-online') ?>"  Online:<span><?= $total ?></span></a>
+                </div>
+            </div>
+
+            <div class="bottom-block">
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="<?= url_to('/') ?>"><?= __('Home') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/register') ?>"><?= __('Register') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/downloads') ?>"><?= __('Downloads') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/info') ?>"><?= __('Info') ?></a></li>
+                        <?php $ranking = \Morpheus\Util\Ranking::first() ?>
+                        <li><a data-ajax href="<?= url_to('/rankings' . ($ranking ? '/' . util('Inflector')->dasherize($ranking) : '')) ?>"><?= __('Rankings') ?></a></li>
+                        <?php if (plugin_active('WebShop')): ?>
+                        <li><a data-ajax href="<?= url_to('/market') ?>"><?= __('Market') ?></a></li>
+                        <?php endif ?>
+                        <?php if (plugin_active('WebShop')): ?>
+                        <li><a data-ajax href="<?= url_to('/shops') ?>"><?= __('Shop') ?></a></li>
+                        <?php endif ?>
+                    </ul>
+                </div>
+                <div class="social-block">
+                    <a href="" target="_blank" class="tw"></a>
+                    <a href="" target="_blank" class="fb"></a>
+                    <a href="" target="_blank" class="yt"></a>
+                </div>
+                <div class="language-block">
+                    <?php
+                    if ($locale === 'en_US') {
+                        echo '<a href="javascript:void(0);" tabindex="1" class="block-toggler">'.__('Language').' <span>(eng)</span> <img src="'.asset_to('/bb-images/en_US.png').'" alt="" style="width: 15px;"></a>';
+                    }
+                    elseif ($locale === 'pt_BR') {
+                        echo '<a href="javascript:void(0);" tabindex="1" class="block-toggler">'.__('Language').' <span>(por)</span> <img src="'.asset_to('/bb-images/pt_BR.png').'" alt="" style="width: 15px;"></a>';
+                    }
+                    elseif ($locale === 'es_ES') {
+                        echo '<a href="javascript:void(0);" tabindex="1" class="block-toggler">'.__('Language').' <span>(esp)</span> <img src="'.asset_to('/bb-images/es_ES.png').'" alt="" style="width: 15px;"></a>';
+                    }
+                    else {
+                        echo '<a href="javascript:void(0);" tabindex="1" class="block-toggler">'.__('Language').' <span>(eng)</span> <img src="'.asset_to('/bb-images/en_US.png').'" alt="" style="width: 15px;"></a>';
+                    }
+                    ?>
+
+                    <ul class="hidden-block">
+                        <li><a href="<?= url_to('/lang/pt_BR') ?>"><?= __('Portuguese') ?></a></li>
+                        <li><a href="<?= url_to('/lang/en_US') ?>"><?= __('English') ?></a></li>
+                        <li><a href="<?= url_to('/lang/es_ES') ?>"><?= __('Espanish') ?></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="big-light">
+            </div>
+            <div class="small-light">
+            </div>
+            <div class="sparks sparks-1">
+            </div>
+            <div class="sparks sparks-2">
+            </div>
+            <div class="sparks sparks-3">
+            </div>
+
+        </header>
+
+        <!-- rei do pvp -->
+                    
+                    
+                    <!-- Rafael Gostoso -->
+							
+            <?php 
+                try {
+                    $hostname = "ip";
+                    $port = porta;
+                    $dbname = "MuOnline";
+                    $username = "sa";
+                    $pw = "senha";
+                    $dbh = new PDO ("dblib:host=$hostname:$port;dbname=$dbname","$username","$pw");
+                    } catch (PDOException $e) {
+                    echo "Failed to get DB handle: " . $e->getMessage() . "\n";
+                    exit;
+                    }
+                    
+                
+
+                $stmt = $dbh->prepare("SELECT TOP 1 Name,cLevel,Reicode,ResetCount,MasterResetCount,Class FROM [MuOnline].dbo.Character WHERE ReiCode=1");								
+                $stmt->execute();
+                $ReiPVP = $stmt->fetch();
+                
+                
+                if ($ReiPVP == NULL) {
+                    $ReiPVP_Name = "Nobody";
+                }
+                else {
+                    $ReiPVP_Name = $ReiPVP['Name'];
+                    $ReiPVP_cLevel = $ReiPVP['cLevel'];
+                    $ReiPVP_ResetCount = $ReiPVP['ResetCount'];
+                    $ReiPVP_MasterResetCount = $ReiPVP['MasterResetCount'];
+                    $ReiPVP_Class = $ReiPVP['Class'];
+                    $stmt = $dbh->prepare("SELECT MasterLevel FROM [MuOnline].dbo.MasterSkillTree WHERE Name = '$ReiPVP_Name'");								
+                    $stmt->execute();
+                    $ReiPVP_MasterLevel = $stmt->fetch();
+                    $ReiPVP_MLevel = $ReiPVP_MasterLevel['MasterLevel'];									
+                    $ReiPVP_Level = $ReiPVP_cLevel + $ReiPVP_MLevel;
+                }
+    
+                
+                unset($dbh); 
+                unset($stmt);
+                
+            ?>
+							
+
+        <div class="container">
+            <aside class="left-sidebar">
+                <div class="partial-login">
+                    <?= partial('login') ?>
+                </div>
+                
+
+                <div class="top-player-block sidebar-block">
+                    <div class="sidebar-title">
+                        <?= __('Rei do PVP') ?>
+                    </div>
+                    <center style="height: 220px;">
+                        <img width="" src="https://razormu.net/images/clases/kingOfPvp.png" style="" alt="">
+                        
+                        <?php
+
+                            if (($ReiPVP_Class <= 67) && ($ReiPVP_Class >= 64)){    
+                            $link = "https://razormu.net/images/clases/DLFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class <= 3) || ($ReiPVP_Class == 7)) {
+                            $link = "https://razormu.net/images/clases/SMFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 16) && ($ReiPVP_Class <= 23)) {
+                            $link = "https://razormu.net/images/clases/BKFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 32) && ($ReiPVP_Class <= 39)) {
+                            $link = "https://razormu.net/images/clases/ELFFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 48) && ($ReiPVP_Class <= 51)) {
+                            $link = "https://razormu.net/images/clases/MGFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 64) && ($ReiPVP_Class <= 67)) {
+                            $link = "https://razormu.net/images/clases/DLFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 80) && ($ReiPVP_Class <= 87)) {
+                            $link = "https://razormu.net/images/clases/SUMFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 96) && ($ReiPVP_Class <= 99)) {
+                            $link = "https://razormu.net/images/clases/RFFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 112) && ($ReiPVP_Class <= 118)) {
+                            $link = "https://razormu.net/images/clases/GLFINAL.png"; 
+                            }else
+                            if (($ReiPVP_Class >= 128) && ($ReiPVP_Class <= 135)) {
+                                $link = "https://razormu.net/images/clases/RWFINAL.png"; 
+                            }else
+                            $link = "https://razormu.net/images/clases/SLFINAL.png"; 
+
+
+                        ?>
+
+                        <a href="https://overtimemu.com/perfil/character/<?php echo $ReiPVP_Name; ?>"> <img width="" src="<?php echo $link; ?>" style="bottom: 157px; position: relative;left: 1px;" alt="" ></a>
+                    </center>
+
+                    <div style="position: relative;
+                        bottom: 48px;
+                        font-size: 16px;
+                        left: 123px;">
+												 
+                        <a href="https://overtimemu.com/perfil/character/<?php echo $ReiPVP_Name; ?>" style="text-decoration: none;"><?php echo $ReiPVP_Name; ?></a>
+                            
+                    </div>
+                </div>
+
+                <?php notify('top-players') ?>
+
+
+
+                
+
+            </aside>     
+
+            
+
+            <main class="content">
+                <div class="ajax-container">
+                    <?= $content ?>
+                </div>
+                <div class="to-top">
+                    <div id="toTop">
+                    </div>
+                </div>
+            </main>
+            <aside class="right-sidebar">
+                <div class="download-reg-block">
+                    <div class="download-button right-button">
+                        <a data-ajax href="<?= url_to('/downloads') ?>"><p><?= __('Download') ?></p> Client 1,02 Gbs</a>
+                    </div>
+                    <div class="registration-button right-button">
+                        <a data-ajax href="<?= url_to('/register') ?>"><p><?= __('Register') ?></p> <?= __('Free To Play') ?></a>
+                    </div>
+
+                    <div class="vip-button right-button">
+                        <a data-ajax href="<?= url_to('/vip') ?>"><p><?= __('Vips') ?></p> <?= __('Take advantage') ?></a>
+                    </div>
+                    <div class="package-button right-button">
+                        <a data-ajax href="<?= url_to('/vip/payment') ?>"><p><?= __('Coins') ?></p> <?= __('Donate') ?></a>
+                    </div>
+
+                </div>
+
+                <div class="top-player-block sidebar-block">
+                    <div class="sidebar-title">
+                        <?= __('Server info') ?>
+                    </div>
+                    <div class="grid-3">
+                                <li class="top-player top-block"><?= __('Version') ?>: <?= config('server.version_name') ?></li>
+                                <li class="top-player top-block"><?= __('Experience') ?>: <?= config('server.experience') ?></li>
+                                <li class="top-player top-block"><?= __('Drop') ?>: <?= config('server.drop') ?></li>
+                                <li class="top-player top-block"><?= __('Total of accounts') ?>: <?= util('Number')->format(account()->count()) ?></li>
+                                <li class="top-player top-block"><?= __('Total of characters') ?>: <?= util('Number')->format(character()->count()) ?></li>
+                                <li class="top-player top-block"><?= __('Total of guilds') ?>: <?= util('Number')->format(guild()->count()) ?></li>
+                            </ul>
+                        <div class="bottom-more">
+                            <span><?= __('All info') ?></span>
+                            <a href="<?= url_to('/info') ?>" class="button">+ <?= __('more') ?></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <?php if (config('castlesiege.next_confrontation')): ?>
+                <div class="top-guilds-block sidebar-block">
+                    <div class="sidebar-title">
+                        <?= __('Castle Siege') ?>
+                    </div>
+                    <?php $siege = server()->getSiegeInfo() ?>
+                    <?php if (isset($siege)): ?>
+                    <center>
+                        <img src="<?= util('Guild')->logoUrl($siege['guild_owner_mark'], 128) ?>" style="width: 80px; height: 80px; border: 1px solid rgb(255,255,255,0.1); margin-bottom: 10px;" />
+                    </center>
+                    <a href="" class="top-guild top-block" title="" style="border-top: 0px;"><span><?= __('Siege Owner') ?></span><span></span> <span><?= $siege['guild_owner'] ?></span></a>
+                    <a href="" class="top-guild top-block" title=""><span><?= __('Guild Master') ?></span><span></span> <span><?= $siege['guild_owner_master'] ?></span></a>
+                    <div class="bottom-more">
+                        <span><?= __('%s', [config('castlesiege.next_confrontation')]) ?></span>
+                        <a href="" class="button">+ <?= __('more') ?></a>
+                    </div>
+                    <?php endif ?>
+                </div>
+                <?php endif ?>
+
+                <style type="text/css">
+                    .off {
+                        color: red;
+                    }
+                    .on {
+                        color: green;
+                    }
+                    .offline {
+                        color: red;
+                    }
+                    .online {
+                        color: green;
+                    }
+                </style>
+
+                <div class="top-guilds-block sidebar-block">
+                    <div class="sidebar-title">
+                        <?= __('Staff') ?>
+                    </div>
+                            <?php foreach (server()->getMembersTeam() as $char): ?>
+
+                    <a href="" class="top-guild top-block" title="" style="border-top: 0px;"><span><?= $char['name'] ?></span><span></span> <span><?= util('Character')->status($char['status']) ?></span></a>
+                                <?php endforeach ?>
+                </div>
+
+                <?php if (plugin_active('Events')): ?>
+                <div class="top-guilds-block sidebar-block">
+                    <?php notify('events.spotlight') ?>
+                </div>
+                <?php endif ?>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <div class="left-footer-block">
+                <div class="f-logo">
+                    <a href=""><img src="<?= asset_to('/bb-images/f-logo.png') ?>" alt=""></a>
+                </div>
+                <div class="copyright">
+                    Copyright <?= date('Y') ?> © <a href=""><?= config('server.name') ?></a> <br>
+                    All Rights Reserved
+                </div>
+            </div><!-- left-footer-block -->
+            <div class="right-footer-block">
+                <div class="f-menu">
+                    <ul>
+                        <li class="active"><a data-ajax href="<?= url_to('/') ?>"><?= __('Home') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/register') ?>"><?= __('Register') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/rankings') ?>"><?= __('Rankings') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/downloads') ?>"><?= __('Downloads') ?></a></li>
+                        <li><a data-ajax href="<?= url_to('/info') ?>"><?= __('Info') ?></a></li>
+                        <li><a data-ajax href=""><?= __('Forum') ?></a></li>
+                    </ul>
+                </div>
+                <div class="templstock">
+                    Powered By <a href="https://morpheusmuweb.com" target="_blank">Overtimemu</a> v.<?= MORPHEUS_VERSION ?> <br> Design By <a href="https://overtimemu.com" target="_blank">Equipe Overtime</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+            } else {
+            $('#toTop').fadeOut();
+        }
+        });
+            $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+        });
+    });
+    </script>
+
+</body>
+</html>

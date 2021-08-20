@@ -1,0 +1,7 @@
+1- Right click on discord server 
+2- Configs -> Integrations
+3- Webhooks
+4- New Webhook
+5- Select Webhook Name and Channel
+6- Paste link on configs
+7- Can create unlimited webhooks (on different channels)
