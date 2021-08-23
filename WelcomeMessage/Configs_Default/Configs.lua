@@ -64,5 +64,5 @@ WelcomeMessage.Configs = {
                 [2] = "CUSTOM MESSAGE WWW.MUSERVER.CLUB" -- spn
             }
         }
-    }
+     }
 }
