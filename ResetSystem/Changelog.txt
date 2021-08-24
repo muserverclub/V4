@@ -1,1 +1,2 @@
 1_0_1: /reloadscript ResetSystem not working some times
+1_0_2: Fix requeriments check
