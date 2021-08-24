@@ -1,2 +1,3 @@
 1_0_1: /reloadscript ResetSystem not working some times
 1_0_2: Fix requeriments check
+1_0_3: Increased Captcha time to 20 secconds (10 before)
