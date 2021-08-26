@@ -1,5 +1,5 @@
 CouponSystem.Active = true
-CouponSystem.CommandNumber = 138-- Command Number
+CouponSystem.CommandNumber = 138   -- Command Number
 CouponSystem.CommandName = "/coupon"
 CouponSystem.Schedule = {
     {year = false, month = false, day = false, wday = false, hour = 20, min = 50},
