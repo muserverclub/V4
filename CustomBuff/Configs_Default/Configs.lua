@@ -1,4 +1,4 @@
-CustomBuff.Active = true
+CustomBuff.Active = true -- Active
 CustomBuff.Configs = {
     [0] = {
         Mode = 0, -- 0 padrao, 1 para dar o buff quando char morrer
