@@ -44,6 +44,7 @@ WhatsApp.Private = {
             "El número fue registrado a su cuenta"
         }
     },
+    
     Functions = {
         UserDisconnect = {
             active = true,
