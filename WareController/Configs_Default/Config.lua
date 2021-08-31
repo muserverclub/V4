@@ -1,113 +1,124 @@
-WareController.Switch = true											    -- true > ativa | false > desativa
+WareController.Switch = true -- true > enable | false > disabled
 
-WareController.FreeExtWare = 5											    -- Baús gratis
+WareController.FreeExtWare = 2 -- Free Wares
 
-WareController.CommandSelect.Code = 100										-- Código de comando para selecionar o baú
-
-WareController.CommandOpen.Code = 101										-- Código de comando para abrir o baú
-
-WareController.CommandBuy.Code = 102									    -- Código de comando para comprar baús
-WareController.CommandBuy.WCoinC = {500,500,500,500}                        -- Requerimento WCoinC
-
-WareController.BinarySize = 3840                                            -- Tamanho do binário de items
-
-WareController.List = {  
-    {
-        NPCNumber = 240,
-        Map = 0, 
-        MapX = 146, 
-        MapY = 147, 
-        MapDir = 1, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 3, 
-        MapX = 173, 
-        MapY = 96, 
-        MapDir = 2, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 51, 
-        MapX = 51, 
-        MapY = 229, 
-        MapDir = 1, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 79, 
-        MapX = 190, 
-        MapY = 26, 
-        MapDir = 2, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 79, 
-        MapX = 169, 
-        MapY = 62, 
-        MapDir = 3, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 79, 
-        MapX = 230, 
-        MapY = 97, 
-        MapDir = 1, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 79, 
-        MapX = 237, 
-        MapY = 27, 
-        MapDir = -1, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 91, 
-        MapX = 52, 
-        MapY = 195, 
-        MapDir = 2, 
-    },
-    {
-        NPCNumber = 240,
-        Map = 2, 
-        MapX = 218, 
-        MapY = 63, 
-        MapDir = 2, 
-    }
-    
+WareController.CommandSelect = {
+  Code = 100 -- CommandManager.txt code
 }
+--Command config to select  warehouse
 
---[[ 
-    Abaixo fica as configuraÃ§Ãµes de traduÃ§Ã£o do script
-        1nd valor: texto em inglÃªs
-        2nd valor: texto em portuguÃªs
-        3nd valor: texto em espanhol
-        4nd valor: nÃ­vel da mensagem exibida ( 0 > centro da tela | 1 > chat azul | 3 > chat vermelho)
-]]
+WareController.CommandOpen = {
+  Code = 101, -- CommandManager.txt code
+  ReqMoney = {10000, 10000, 10000, 10000}
+}
+--Command config to open warehouse
 
-WareController.Strings[0] = "    Warehouse          #%d"
-WareController.Strings[1] = {
-	"Warehouse %d was selected",
-	"Baú %d foi selecionado",
-	"Almacén %d fue seleccionado",
-	1
+WareController.CommandBuy = {
+  Code = 102, -- CommandManager.txt code
+  ReqWCoinC = {500, 500, 500, 500}
 }
-WareController.Strings[2] = {
-	"You don't have access to warehouse %d",
-	"Você não tem acesso ao baú %d",
-	"No tienes acceso al almacén %d",
-	1
+--Command config to buy warehouse
+
+WareController.List = {
+  {
+    NPCNumber = 240,
+    Map = 0,
+    MapX = 146,
+    MapY = 147,
+    MapDir = 1
+  },
+  {
+    NPCNumber = 240,
+    Map = 3,
+    MapX = 173,
+    MapY = 96,
+    MapDir = 2
+  },
+  {
+    NPCNumber = 240,
+    Map = 51,
+    MapX = 51,
+    MapY = 229,
+    MapDir = 1
+  },
+  {
+    NPCNumber = 240,
+    Map = 79,
+    MapX = 190,
+    MapY = 26,
+    MapDir = 2
+  },
+  {
+    NPCNumber = 240,
+    Map = 79,
+    MapX = 169,
+    MapY = 62,
+    MapDir = 3
+  },
+  {
+    NPCNumber = 240,
+    Map = 79,
+    MapX = 230,
+    MapY = 97,
+    MapDir = 1
+  },
+  {
+    NPCNumber = 240,
+    Map = 79,
+    MapX = 237,
+    MapY = 27,
+    MapDir = -1
+  },
+  {
+    NPCNumber = 240,
+    Map = 91,
+    MapX = 52,
+    MapY = 195,
+    MapDir = 2
+  },
+  {
+    NPCNumber = 240,
+    Map = 2,
+    MapX = 218,
+    MapY = 63,
+    MapDir = 2
+  },
+  {
+    NPCNumber = 240,
+    Map = 33,
+    MapX = 82,
+    MapY = 15,
+    MapDir = 1
+  }
 }
-WareController.Strings[3] = {
-	"<FONT color='#00ffff' size='14'>Warehouse #%d opened</FONT>",
-	"<FONT color='#00ffff' size='14'>Baú #%d aberto</FONT>",
-	"<FONT color='#00ffff' size='14'>Almacén #%d abierto</FONT>",
-	0
+ -- Spawn Ware List
+
+WareController.Strings.NpcTitle = {
+  "     Warehouse         #%d",
+  "     Warehouse         #%d",
+  "     Warehouse         #%d"
 }
-WareController.Strings[4] = {
-	"Warehouse %d acquired",
-	"Baú %d adquirido",
-	"Almacén %d adquirido",
-	3
+WareController.Strings.WareSelected = {
+  "Warehouse %d was selected",
+  "Warehouse %d foi selecionado",
+  "Warehouse %d fue seleccionado",
+  1
+}
+WareController.Strings.NotAccess = {
+  "You don't have access to Warehouse %d",
+  "Você não tem acesso ao Warehouse %d",
+  "No tienes acceso al Warehouse %d",
+  1
+}
+WareController.Strings.WareOpened = {
+  "<FONT color='#00ffff' size='14'>Warehouse #%d opened</FONT>",
+  "<FONT color='#00ffff' size='14'>Warehouse #%d aberto</FONT>",
+  "<FONT color='#00ffff' size='14'>Warehouse #%d abierto</FONT>",
+  0
+}
+WareController.Strings.WareAcquired = {
+  "Warehouse %d acquired",
+  "Warehouse %d adquirido",
+  "Warehouse %d adquirido",
+  3
 }
