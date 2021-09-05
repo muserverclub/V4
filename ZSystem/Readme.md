@@ -1,4 +1,4 @@
-Current version 1_0_6
 
-Added: Data Override
-Fixed: Restore Pk Status
+### Version 1_0_7
+
+>Fixed: Check Luck Section 13
