@@ -1,29 +1,10 @@
-HuntPoint.Lang.LostHuntPoint = {
-    "[BATTLE] você perdeu %d HuntPoints.",
-    "[BATTLE] você perdeu %d HuntPoints.",
-    "[BATTLE] você perdeu %d HuntPoints.",
-    3
-}
-HuntPoint.Lang.GainInactive = {
-    "[BATTLE] você recebeu %d Inativos.",
-    "[BATTLE] você recebeu %d Inativos.",
-    "[BATTLE] você recebeu %d Inativos.",
-    1
-}
-HuntPoint.Lang.AddBattleBuff = {
-    "%s | Battle Buff: %d%% adicionado",
-    "%s | Battle Buff: %d%% adicionado",
-    "%s | Battle Buff: %d%% adicionado",
-    1
-}
-HuntPoint.Lang.BattlePreparation = {"Preparação | %d", "Preparação | %d", "Preparação | %d"}
-HuntPoint.Lang.BattleTime = {"Battle | %d", "Battle | %d", "Battle | %d"}
+
 HuntPoint.Lang.HuntAmount = {"[HuntPoint] Hunts: %d", "[HuntPoint] Hunts: %d", "[HuntPoint] Hunts: %d", 1}
 HuntPoint.Lang.InactiveAmount = {"[HuntPoint] Inativos: %d", "[HuntPoint] Inativos: %d", "[HuntPoint] Inativos: %d", 1}
-HuntPoint.Lang.OfflineCharacter = {
-    "Personagem offline ou não existe",
-    "Personagem offline ou não existe",
-    "Personagem offline ou não existe",
+HuntPoint.Lang.InvalidCharacter = {
+    "Personagem inválido ou não existe",
+    "Personagem inválido ou não existe",
+    "Personagem inválido ou não existe",
     1
 }
 HuntPoint.Lang.CommandHuntAmount = {
@@ -44,7 +25,6 @@ HuntPoint.Lang.CommandHuntWeek = {
     "[Huting] Montstros: %d | Treino Semanal: %d%%",
     1
 }
-HuntPoint.Lang.YouAreInTheBattle = {"Você já está no battle.", "Você já está no battle.", "Você já está no battle.", 1}
 HuntPoint.Lang.EnableHuntPointRequired = {
     "Habilite o huntpoint para poder entrar.",
     "Habilite o huntpoint para poder entrar.",
@@ -101,19 +81,9 @@ HuntPoint.Lang.InsertItemQuestName = {
     1
 }
 HuntPoint.Lang.MonsterHuntRaffle = {"[HuntPoint] %s: %.1f%%", "[HuntPoint] %s: %.1f%%", "[HuntPoint] %s: %.1f%%", 1}
-HuntPoint.Lang.OutOfEvent = {
-    "[Battle] você fugiu do evento e perdeu HuntPoints.",
-    "[Battle] você fugiu do evento e perdeu HuntPoints.",
-    "[Battle] você fugiu do evento e perdeu HuntPoints.",
-    3
-}
+
 HuntPoint.Lang.QuestNotExists = {"Essa quest não existe.", "Essa quest não existe.", "Essa quest não existe.", 1}
-HuntPoint.Lang.BattleKillerAnnounce = {
-    "[BATTLE] %s %s >> %s %s.",
-    "[BATTLE] %s %s >> %s %s.",
-    "[BATTLE] %s %s >> %s %s.",
-    1
-}
+
 HuntPoint.Lang.LootingCancel = {"[LOOTING] Cancelado!", "[LOOTING] Cancelado!", "[LOOTING] Cancelado!", 3}
 HuntPoint.Lang.LootingInactive = "%s's loot %d Inactive"
 HuntPoint.Lang.LootingPlayer = "[%s] looting on %d ..."
@@ -128,16 +98,4 @@ HuntPoint.Lang.NextUpdateMap = {
     "Próxima atualização em %s",
     "Próxima atualização em %s",
     1
-}
-HuntPoint.Lang.EnterBattleAnnounce = {
-    "<FONT color='#FFFF00'>[Battle] %s entrou!!!</FONT><BR>",
-    "<FONT color='#FFFF00'>[Battle] %s entrou!!!</FONT><BR>",
-    "<FONT color='#FFFF00'>[Battle] %s entrou!!!</FONT><BR>",
-    0
-}
-HuntPoint.Lang.EnterBattleAnnounceGuild = {
-    "<FONT color='#FFFF00'>[Battle] %s [%s] entrou!!!</FONT><BR>",
-    "<FONT color='#FFFF00'>[Battle] %s [%s] entrou!!!</FONT><BR>",
-    "<FONT color='#FFFF00'>[Battle] %s [%s] entrou!!!</FONT><BR>",
-    0
 }
