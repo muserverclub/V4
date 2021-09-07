@@ -1,4 +1,4 @@
 
-### Version 1_0_7
+### Version 1_0_8
 
->Fixed: Check Luck Section 13
+>Fixed: Closing hwid
