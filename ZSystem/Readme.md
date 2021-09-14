@@ -1,4 +1,4 @@
 
-### Version 1_0_8
+### Version 1_0_9
 
->Fixed: Closing hwid
+>Fixed: Standard Query execution problem

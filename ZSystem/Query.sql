@@ -1,5 +1,7 @@
 ALTER TABLE MEMB_INFO ADD [hwid] varchar(100) NOT NULL DEFAULT(0);
 GO
+ALTER TABLE MEMB_INFO ADD [auth2fa] bit NOT NULL DEFAULT(0);
+GO
 
 
 -- DROP TABLE dbo.Greed_Reward;
