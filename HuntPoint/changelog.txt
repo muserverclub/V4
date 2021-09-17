@@ -1,0 +1,2 @@
+Version 1_0_2
+  [Fix] Random map

@@ -18,9 +18,11 @@ HuntPoint.BuffRaffleAfterMaxMonster = true -- Continua transferindo % de buff me
 HuntPoint.WeekMonsterCount = 20000 -- Quantidade de monstros que o jogador deve matar toda semana para não ser penalizado com perda de hunt
 HuntPoint.WeekTransformPercent = 5 -- Quantidade de HuntPoints (em %) que será transformado em inativos
 
-HuntPoint.Maps = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14} -- Mapas de farming
---HuntPoint.Maps = {112, 113, 116, 117, 118, 119, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133} -- Mapas de farming
+HuntPoint.Maps = {112, 113, 116, 117, 118, 119, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133} -- Mapas de farming
+
 HuntPoint.AttMapTime = 21600 -- Tempo em segundos pra sortear os mapas de up
 
 HuntPoint.Command.Code = 109 -- Número do comando para ver status de hunt
-HuntPoint.Command.displayErrors = false
+HuntPoint.Command.showMessage = false
+HuntPoint.Command.AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}} -- Número do comando para ver status de hunt
+HuntPoint.Command.AllowReset = {{200, 200}, {200, 200}, {200, 200}, {200, 200}} -- Número do comando para ver status de hunt
