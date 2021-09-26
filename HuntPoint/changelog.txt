@@ -1,2 +1,10 @@
-Version 1_0_2
-  [Fix] Random map
+Version 1_0_4
+  [Add] GetObjectHuntPoint(aIndex)
+  [Add] SetObjectHuntPoint(aIndex,aValue)
+  [Add] SubObjectHuntPoint(aIndex,aValue)
+  [Add] AddObjectHuntPoint(aIndex,aValue)
+  [Add] CalcObjectHuntPoint(aIndex)
+  [Add] GetObjectHuntInactive(aIndex)
+  [Add] SetObjectHuntInactive(aIndex,aValue)
+  [Add] SubObjectHuntInactive(aIndex,aValue)
+  [Add] AddObjectHuntInactive(aIndex,aValue)

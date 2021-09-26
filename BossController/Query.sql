@@ -30,6 +30,7 @@ CREATE TABLE dbo.greed_bosstime
 (
 	servercode int NOT NULL,
 	monsterid int NOT NULL,
+	config_id int NOT NULL,
 	monstername varchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	timer int NOT NULL
 );

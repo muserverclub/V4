@@ -1,4 +1,3 @@
-
 HuntPoint.Lang.HuntAmount = {"[HuntPoint] Hunts: %d", "[HuntPoint] Hunts: %d", "[HuntPoint] Hunts: %d", 1}
 HuntPoint.Lang.InactiveAmount = {"[HuntPoint] Inativos: %d", "[HuntPoint] Inativos: %d", "[HuntPoint] Inativos: %d", 1}
 HuntPoint.Lang.InvalidCharacter = {
@@ -17,6 +16,30 @@ HuntPoint.Lang.CommandHuntTile = {
     "HuntPoints: %d, Inativo: %d, Set: %d/%d%%, Montros: %d/%d, Exp:",
     "HuntPoints: %d, Inativo: %d, Set: %d/%d%%, Montros: %d/%d, Exp:",
     "HuntPoints: %d, Inativo: %d, Set: %d/%d%%, Montros: %d/%d, Exp:",
+    1
+}
+HuntPoint.Lang.HuntPointObtained = {
+    "%s HuntPoint obtained",
+    "%s HuntPoint obtido",
+    "%s HuntPoint obtenido",
+    1
+}
+HuntPoint.Lang.HuntPointRemoved = {
+    "%s HuntPoint removed",
+    "%s HuntPoint removido",
+    "%s HuntPoint eliminado",
+    1
+}
+HuntPoint.Lang.InactiveObtained = {
+    "%s Inactive obtained",
+    "%s Inactive obtido",
+    "%s Inactive obtenido",
+    1
+}
+HuntPoint.Lang.InactiveRemoved = {
+    "%s Inactive removed",
+    "%s Inactive removido",
+    "%s Inactive eliminado",
     1
 }
 HuntPoint.Lang.CommandHuntWeek = {

@@ -1,4 +1,4 @@
+### Version 1_1_2
 
-### Version 1_0_9
-
->Fixed: Standard Query execution problem
+>Fix: Executioner order
+>Add: Lag detection

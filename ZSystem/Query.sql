@@ -275,3 +275,20 @@ BEGIN
 
 END;
 GO
+
+
+-- DROP TABLE dbo.MSC_REWARD_LOG;
+
+CREATE TABLE dbo.MSC_REWARD_LOG (
+	Id bigint IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	ServerCode int NOT NULL,
+	BagName varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	CountDrop varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	SectionRate varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[Type] varchar(20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	UserName varchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	TargetName varchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	Vip int NOT NULL
+);
+
+GO

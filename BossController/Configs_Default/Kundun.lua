@@ -40,7 +40,9 @@ BossController.BossList[275][1].AnnounceRespawn = false -- true > enable notific
 BossController.BossList[275][1].AnnounceUserDie = true -- true > enable notification when a boss kills a player | false > disable
 BossController.BossList[275][1].RespawnTime = {24 * 3600, 48 * 3600} -- {Minimum Time, Maximum Time} > for boss to respawn | false > disable
 BossController.BossList[275][1].RespawnClear = false -- true > clears all monsters from areas entered in Location when boss reappears | false > disable
-BossController.BossList[275][1].Respawn = {} -- List of monsters that will be summoned when the boss revives
+BossController.BossList[275][1].Respawn = {
+    {Monster = 275, Map = 36, MapXMin = 0, MapXMax = 255, MapYMin = 0, MapYMax = 255}
+} -- List of monsters that will be summoned when the boss revives
 --example: {Monster = 275, Map = 36, MapXMin = 0, MapXMax = 255, MapYMin = 0, MapYMax = 255},
 BossController.BossList[275][1].BlockEnterOnDead = false -- true > remover o jogador se o boss estiver morto (você precisa configurar "KillMoveLocation") | false > disable
 BossController.BossList[275][1].KillMoveTime = -1 -- Time to be moved after killing the boss | -1 > disables

@@ -10,10 +10,11 @@ table.insert(
         MaxTimeCount = 600, -- Invasion time ( delete to use global MaxTimeCount )
         Requirements = {
             displayErrors = false,
-            AllowClass = {55}
+            AllowClass = {420}
         }, -- Requirements list | https://github.com/muserverclub/ServerClub-Resources/tree/main/Guides%20(Guias)/Requirement-Guide
         Reward = {
-            Money = 100
+            Money = 100,
+            SpecialEventBagGive = {15, 15, 15}
         } -- Reward list | https://github.com/muserverclub/ServerClub-Resources/tree/main/Guides%20(Guias)/Reward-Guide
     }
 )
