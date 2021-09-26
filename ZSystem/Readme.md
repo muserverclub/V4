@@ -1,4 +1,4 @@
-### Version 1_1_2
+### Version 1_1_3
 
->Fix: Executioner order
->Add: Lag detection
+> Fix: Verify thread
+> Fix: Check level up and master level up
