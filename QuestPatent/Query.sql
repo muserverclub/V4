@@ -8,3 +8,5 @@ CREATE TABLE dbo.Greed_QuestPatent
   Monster text COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
   Player text COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 );
+
+GO

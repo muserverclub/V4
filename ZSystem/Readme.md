@@ -1,4 +1,4 @@
-### Version 1_1_3
+### Version 1_1_4
 
-> Fix: Verify thread
-> Fix: Check level up and master level up
+> Added: SSEMU Support
+> Change: LagDetection.log folder

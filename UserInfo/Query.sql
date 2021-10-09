@@ -1,0 +1,2 @@
+ALTER TABLE Character ADD NewExperience INT NOT NULL DEFAULT(0)
+GO
