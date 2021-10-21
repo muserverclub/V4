@@ -7,7 +7,7 @@ HuntPoint.Buffs[44] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[45] = {
@@ -19,7 +19,7 @@ HuntPoint.Buffs[45] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[46] = {
@@ -31,7 +31,7 @@ HuntPoint.Buffs[46] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[47] = {
@@ -43,7 +43,7 @@ HuntPoint.Buffs[47] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[48] = {
@@ -55,7 +55,7 @@ HuntPoint.Buffs[48] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[49] = {
@@ -67,7 +67,7 @@ HuntPoint.Buffs[49] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[89] = {
@@ -79,7 +79,7 @@ HuntPoint.Buffs[89] = {
     IsPercent = true, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[90] = {
@@ -91,7 +91,7 @@ HuntPoint.Buffs[90] = {
     IsPercent = true, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[114] = {
@@ -103,7 +103,7 @@ HuntPoint.Buffs[114] = {
     IsPercent = false, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[121] = {
@@ -115,6 +115,6 @@ HuntPoint.Buffs[121] = {
     IsPercent = true, -- true > Exibe como porcentagem | false > n„o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
     AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/M·ximo Level para usar o comando ( para cada nùvel vip )
-    AllowReset = {{200, 9999}, {200, 9999}, {200, 9999}, {200, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
+    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/M·ximo Reset para usar o comando ( para cada nùvel vip )
     displayErrors = false
 }

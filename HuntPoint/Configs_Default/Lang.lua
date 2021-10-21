@@ -7,15 +7,15 @@ HuntPoint.Lang.InvalidCharacter = {
     1
 }
 HuntPoint.Lang.CommandHuntAmount = {
-    " > %s | HuntPoints: %d | Inativo: %d",
-    " > %s | HuntPoints: %d | Inativo: %d",
-    " > %s | HuntPoints: %d | Inativo: %d",
+    " > %s | Level: %d",
+    " > %s | Level: %d",
+    " > %s | Level: %d",
     1
 }
 HuntPoint.Lang.CommandHuntTile = {
-    "HuntPoints: %d, Inativo: %d, Set: %d/%d%%, Montros: %d/%d, Exp:",
-    "HuntPoints: %d, Inativo: %d, Set: %d/%d%%, Montros: %d/%d, Exp:",
-    "HuntPoints: %d, Inativo: %d, Set: %d/%d%%, Montros: %d/%d, Exp:",
+    "Level: %d | Evolução: %d%% | Points: %d + %d (Inativos) | Set: %d/%d%%",
+    "Level: %d | Evolução: %d%% | Points: %d + %d (Inativos) | Set: %d/%d%%",
+    "Level: %d | Evolução: %d%% | Points: %d + %d (Inativos) | Set: %d/%d%%",
     1
 }
 HuntPoint.Lang.HuntPointObtained = {
