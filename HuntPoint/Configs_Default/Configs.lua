@@ -22,7 +22,7 @@ HuntPoint.AttMapTime = 21600 -- Tempo em segundos pra sortear os mapas de up
 
 HuntPoint.LevelDiv = 1000 -- Divisor de huntpoint x level
 
-HuntPoint.Command.Code = 109 -- Número do comando para ver status de hunt
+HuntPoint.Command.Code = 109 -- Número do comando para ver status de hun t
 HuntPoint.Command.displayErrors = false
 
 HuntPoint.Maps = {
