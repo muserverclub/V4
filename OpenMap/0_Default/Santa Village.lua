@@ -4,7 +4,7 @@ table.insert(
         Command = 154, -- Comando de entrada
         EntraceNPC = {
             -- NPCS de entrada
-            {ID = 239, Map = 79, MapX = 204, MapY = 61, Dir = 1}
+            {ID = 239, Map = 56, MapX = 135, MapY = 98, Dir = 2}
         },
         Schedule = {
             -- Inicio de abertura do mapa
@@ -15,26 +15,46 @@ table.insert(
         AutoRenew = true, -- true > Renova permissão do jogador automaticamente quando o tempo acabar | false > remove o jogador
         Requirements = {
             -- Requerimentos de entrada
-            ReqItem = {
-                {{1, (14 * 512 + 51), -1}},
-                {{1, (14 * 512 + 51), -1}},
-                {{1, (14 * 512 + 51), -1}},
-                {{1, (14 * 512 + 51), -1}}
+            ReqItemEx = {
+                -- FREE
+                {
+                    {Title = "Kriss", Index = (0 * 512 + 0), MinExc = 1, MaxExc = 6}
+                },
+                -- VIP 1
+                {
+                    {Title = "Kriss", Index = (0 * 512 + 0), MinExc = 1, MaxExc = 6}
+                },
+                -- VIP 2
+                {
+                    {Title = "Kriss", Index = (0 * 512 + 0), MinExc = 1, MaxExc = 6}
+                },
+                -- VIP 3
+                {
+                    {Title = "Kriss", Index = (0 * 512 + 0), MinExc = 1, MaxExc = 6}
+                }
             }
         },
         Area = {
             -- Area do evento
-            Map = 62,
+            Map = 56,
             MapXMin = 0,
             MapYMin = 0,
-            MapXMax = 255,
-            MapYMax = 255
+            MapXMax = 75,
+            MapYMax = 135
+        },
+        MoveArea = {
+            -- Local para onde o jogador será movido inicialmente
+            Map = 56,
+            MapXMin = 0,
+            MapYMin = 0,
+            MapXMax = 75,
+            MapYMax = 135
         },
         RemoveTo = {
             -- Local para onde o jogador é movido quando ele sai do evento
-            Map = 79,
-            MapX = 205,
-            MapY = 60
+            Map = 0,
+            MapX = 125,
+            MapY = 125
         },
         Strings = {
             NPCTitle = {"Santa Village", "Santa Village", "Santa Village", 0},
