@@ -1,4 +1,4 @@
-### Version 1_1_4
+### Version 1_1_5
 
-> Added: SSEMU Support
-> Change: LagDetection.log folder
+> Added: SSEMU New Bridge OnCommandDone
+> Fix: Fix internal problems

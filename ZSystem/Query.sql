@@ -79,7 +79,10 @@ CREATE TABLE dbo.CharacterRealTime
     AttackMapX int DEFAULT 0 NOT NULL,
     AttackMapY int DEFAULT 0 NOT NULL,
     Class int DEFAULT 0 NOT NULL,
-    OfflineFlag int DEFAULT 0 NOT NULL
+    OfflineFlag int DEFAULT 0 NOT NULL,
+    aIndex int DEFAULT 0 NOT NULL,
+    DiscordEvent varchar(20) NULL,
+    PartyNumber int DEFAULT(-1) NOT NULL
 );
 GO
 
@@ -114,7 +117,10 @@ CREATE Procedure [dbo].[G_CharacterRealTime]
     @Ruud int= null,
     @Money int= null,
     @Class int = null,
-    @OfflineFlag int = null
+    @OfflineFlag int = null,
+    aIndex int = null,
+    DiscordEvent varchar(20)= null,
+    PartyNumber int= null
 AS
 BEGIN
 
@@ -154,7 +160,10 @@ BEGIN
             ,[Ruud]
             ,[Money]
             ,[Class]
-            ,[OfflineFLag] )
+            ,[OfflineFLag]
+            ,[aIndex]
+            ,[DiscordEvent]
+            ,[PartyNumber] )
         VALUES
             (@AccountId,
                 @Name,
@@ -183,7 +192,10 @@ BEGIN
                 COALESCE(@Ruud,0),
                 COALESCE(@Money,0),
                 COALESCE(@Class,0),
-                COALESCE(@OfflineFlag,0))
+                COALESCE(@OfflineFlag,0),
+                COALESCE(@aIndex,0),
+                COALESCE(@DiscordEvent,'0'),
+                COALESCE(@PartyNumber,-1))
 
     END
 ELSE
@@ -217,7 +229,10 @@ BEGIN
 			,[Ruud] = COALESCE(@Ruud,Ruud)
 			,[Money] = COALESCE(@Money,Money)
 			,[Class] = COALESCE(@Class,Class)
-			,[OfflineFlag] = COALESCE(@OfflineFlag,OfflineFlag)
+			,[OfflineFlag] = COALESCE(@OfflineFlag,OfflineFlag),
+            ,[aIndex] = COALESCE(@aIndex,aIndex),
+            ,[DiscordEvent] = COALESCE(@DiscordEvent,DiscordEvent),
+            ,[PartyNumber] =  COALESCE(@PartyNumber,PartyNumber)
         WHERE [Name] = @Name
 
     END
