@@ -24,6 +24,7 @@ PVP_MataMata.Configs = {
         /pvpgm 30  --> start KING OF PVP
     ]]
     AutoPK = true, -- add pk and remove in the end
+    BlockParty = true, --block enter event in party -> true enable | false disable
     CommandGM = 425, -- command number for game master start event (CommandManager)    
     AccBlock = 0; -- 0 --> always | 2 -> only if you have SERVER.DLL (limit 1 player by pc) 
     WaitCords = {6,200,3}, -- {MapNumber,MapX,MapY} -> wait fight time
@@ -1469,6 +1470,16 @@ PVP_MataMata.Strings = {
         "[PVP] - %s is the New KING OF PVP",
         "[MataMata] - %s é o novo Rei do PVP",
         "[PVP] - %s es el nuevo Reye del PVP!"
+    },
+    [23] = {
+        "[PVP] - You can´t enter in Party",
+        "[MataMata] - Você não pode entrar em Party",
+        "[PVP] - Usted no puede particiar en Party"
+    },
+    [24] = {
+        "[PVP] - All buffs removed",
+        "[MataMata] - Todos os buffs foram removidos",
+        "[PVP] - Todos los buffs fueron borrados"
     },
 
 }
