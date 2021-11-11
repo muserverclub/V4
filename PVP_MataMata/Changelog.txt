@@ -1,2 +1,2 @@
-1_0_2: Block Party to participate, new lang options. #Must update Configs.lua file
+1_0_2: Block Party to participate, new lang options. ##Must update Configs.lua file
 1_0_1: Fix script Not working on Zsystem 1_0_4. Must update to ZSystem 1_0_5 or higher
