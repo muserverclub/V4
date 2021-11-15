@@ -58,8 +58,8 @@ KillFeed.String.DeathListTitle = {
 	1
 }
 KillFeed.String.ListPositions = {
-	"  %s : %s [ %d - %d ] - %s",
-	"  %s : %s [ %d - %d ] - %s",
-	"  %s : %s [ %d - %d ] - %s",
+	"%d)  %s : %s [ %d - %d ] - %s",
+	"%d)  %s : %s [ %d - %d ] - %s",
+	"%d)  %s : %s [ %d - %d ] - %s",
 	1
 }
