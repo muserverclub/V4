@@ -1,3 +1,3 @@
-### Version 2_0_0
+### Version 2_0_1
 
-> Fix reload script time
+> Fix memory increasing size (heap/memory leak)
