@@ -1,3 +1,3 @@
-### Version 2_0_1
+### Version 2_0_2
 
-> Fix memory increasing size (heap/memory leak)
+> Fix ssemu item move
