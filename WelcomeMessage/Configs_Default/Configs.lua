@@ -9,7 +9,7 @@ WelcomeMessage.Configs = {
     Messages = {
         -- messages will appear in order
         [0] = {
-            type = 0, -- 0 --> vip level, 1 --> vip Expire date, 0 --> vip days left,  3--> custom message
+            type = 0, -- 0 --> vip level, 1 --> vip Expire date, 2 --> vip days left,  3--> custom message
             MsgLevel = 0, -- 0 --> middle screen, 1 --> blue message (system message), 3 --> red message (system message)
             Format = {
                 Enable = 1, -- Enable custom Color and Size
@@ -23,7 +23,7 @@ WelcomeMessage.Configs = {
             }
         },
         [1] = {
-            type = 1, -- 0 --> vip level, 1 --> vip Expire date, 0 --> vip days left,  3--> custom message
+            type = 1, -- 0 --> vip level, 1 --> vip Expire date, 2 --> vip days left,  3--> custom message
             MsgLevel = 0, -- 0 --> middle screen, 1 --> blue message (system message), 3 --> red message (system message)
             Format = {
                 Enable = 1, -- Enable custom Color and Size
@@ -37,7 +37,7 @@ WelcomeMessage.Configs = {
             }
         },
         [2] = {
-            type = 2, -- 0 --> vip level, 1 --> vip Expire date, 0 --> vip days left,  3--> custom message
+            type = 2, -- 0 --> vip level, 1 --> vip Expire date, 2 --> vip days left,  3--> custom message
             MsgLevel = 0, -- 0 --> middle screen, 1 --> blue message (system message), 3 --> red message (system message)
             Format = {
                 Enable = 1, -- Enable custom Color and Size
@@ -51,7 +51,7 @@ WelcomeMessage.Configs = {
             }
         },
         [3] = {
-            type = 3, -- 0 --> vip level, 1 --> vip Expire date, 0 --> vip days left,  3--> custom message
+            type = 3, -- 0 --> vip level, 1 --> vip Expire date, 2 --> vip days left,  3--> custom message
             MsgLevel = 0, -- 0 --> middle screen, 1 --> blue message (system message), 3 --> red message (system message)
             Format = {
                 Enable = 1, -- Enable custom Color and Size

@@ -63,6 +63,7 @@ Auction.Event[1] = {
     StartBids = 0, -- Start Bids Value
     MoveUser = {
         Enable = false,
+        MoveGuild = true, -- will move guild if Enable is true and MoveGuild is also true
         Duration = 180, -- time to kill the boss
         Map = 6, 
         MapX = 125,
@@ -225,6 +226,27 @@ Auction.Lang = {
         "You don´t have %d %s", -- eng
         "Você não tem %d %s", -- por
         "Usted no tiene %d %s", -- spn
+        1
+    },
+
+    [18] = {
+        "Boss Time Left %d minute(s)", -- eng
+        "Tempo restante do boss %d minuto(s)", -- por
+        "Boss Time Left %d minute(s)", -- spn
+        1
+    },
+
+    [19] = {
+        "Boss Time is over", -- eng
+        "Tempo do boss acabou", -- por
+        "Boss Time se acabo", -- spn
+        1
+    },
+
+    [20] = {
+        "Welcome to boss zone. Select server to exit!", -- eng
+        "Bem vindo a zona do boss. Selecione servidor para sair", -- por
+        "Bien venido a la zona del boss. Para salir selecione servidor", -- spn
         1
     },
 
