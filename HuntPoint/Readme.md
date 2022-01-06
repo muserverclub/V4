@@ -1,9 +1,5 @@
 # Executar no SQL o arquivo Query.sql
 
-# Altere as seguintes linhas em Data/CommandManage.txt\
-127       "/buy"
-
-
 # Change in Data/Effect.txt\
 44        67      14,72       "Scroll of Quick"                     0      0      0      *    *       *        *        * 
 45        68      14,73       "Scroll of Defense"                   0      0      0      *    *       *        *        * 

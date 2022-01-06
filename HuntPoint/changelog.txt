@@ -1,2 +1,9 @@
-Version 1_0_6
-  [Fix] Up on valid gameeserver
+Version 1_0_7
+  [Fix] save hunt level on database
+
+
+
+
+
+Execute on SQL:
+ALTER TABLE greed_huntpoint ADD bigint DEFAULT 0 NOT NULL;
