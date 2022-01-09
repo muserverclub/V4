@@ -19,7 +19,7 @@ WelcomeMessage.Configs = {
             Message = {
                 [0] = "ACCOUNT LEVEL: %s ", -- eng
                 [1] = "VIP LEVEL: %s ", -- por
-                [2] = "NÕVEL DE VIP: %s " -- spn
+                [2] = "N√çVEL DE VIP: %s " -- spn
             }
         },
         [1] = {
@@ -33,7 +33,7 @@ WelcomeMessage.Configs = {
             Message = {
                 [0] = "Expire date: %s", -- eng
                 [1] = "Expira em: %s", -- por
-                [2] = "ExpiraciÛn: %s" -- spn
+                [2] = "Expiraci√≥n: %s" -- spn
             }
         },
         [2] = {
@@ -47,7 +47,7 @@ WelcomeMessage.Configs = {
             Message = {
                 [0] = "%d days left", -- eng
                 [1] = "%d dias restantes", -- por
-                [2] = "%d dÌas" -- spn
+                [2] = "%d d√≠as" -- spn
             }
         },
         [3] = {
@@ -66,3 +66,4 @@ WelcomeMessage.Configs = {
         }
      }
 }
+
