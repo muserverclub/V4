@@ -1,5 +1,5 @@
 ResetSystem.Active = true
-ResetSystem.Captcha = 1 -- Captcha System
+ResetSystem.Captcha = 0 -- Captcha System
 ResetSystem.CommandNumber = 1005
 ResetSystem.CommandName = "/reset"
 ResetSystem.Mode = 1 -- 0 somente premiação (reset controlado pelo Game Server), 1 - reset controlado pelo Script
@@ -20,6 +20,12 @@ ResetSystem.Configs = {
             [1] = 1, -- vip 1
             [2] = 1, -- vip 2
             [3] = 1, -- vip 3
+        },
+        RemoveSet = { -- requires remove set
+            [0] = false, -- free
+            [1] = false, -- vip 1
+            [2] = false, -- vip 2
+            [3] = false, -- vip 3
         },
         Requirements = { 
             
@@ -83,7 +89,7 @@ ResetSystem.Configs = {
             RandomRuud = {},
             Money = 0,
             RandomMoney = {},
-            WCoinC = 110,
+            WCoinC = 0,
             RandomWCoinC = {},
             WCoinP = 0,
             RandomWCoinP = {},
@@ -132,7 +138,11 @@ ResetSystem.Strings = {
 
     [5] = {
         "[System]You must talk with NPC first!","[System] Precisa falar com o NPC antes","[System] Tiene que hablar con el NPC antes"
-    },        
+    },     
+    
+    [6] = {
+        "[System]You must remove set","[System] Voc? precisa retirar o set","[System] Must remove set"
+    },  
     
     [10000] = "WCoinC",
     [10001] = "WCoinP",
