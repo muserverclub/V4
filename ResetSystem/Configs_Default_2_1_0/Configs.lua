@@ -114,6 +114,24 @@ ResetSystem.NPC = {
     --{Number = 125,Map = 0, MapX = 125, MapY = 125, Dir = 3, Text = "Resete seu char aqui"},
 }
 
+ResetSystem.Move = {
+    Enable = false,
+    Class = {
+        --[class] = gate, -- example
+        [0] = 17, -- SM
+        [1] = 17, -- BK
+        [2] = 27, -- ELF
+        [3] = 17, -- MG
+        [4] = 17, -- DL
+        [5] = 17, -- SU
+        [6] = 17, -- RF
+        [7] = 17, -- GL
+        [8] = 17, -- RW
+        [9] = 17, -- SL
+        [10] = 17, -- GS
+    }
+}
+
 ResetSystem.Strings = {
         
     [0] = {
