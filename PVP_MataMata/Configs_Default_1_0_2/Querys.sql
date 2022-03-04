@@ -10,7 +10,7 @@ MataMataSUM int NOT NULL DEFAULT ((0)),
 MataMataRF int NOT NULL DEFAULT ((0)),
 MataMataRW int NOT NULL DEFAULT ((0)),
 MataMataSL int NOT NULL DEFAULT ((0)),
-MataMataGC int NOT NULL DEFAULT ((0))
+MataMataGC int NOT NULL DEFAULT ((0)),
 Reicode int NOT NULL DEFAULT ((0))
 ALTER TABLE [dbo].[MEMB_INFO]
 ADD MataMataCheck int NOT NULL DEFAULT ((0))
