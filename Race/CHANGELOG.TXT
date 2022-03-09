@@ -1,2 +1,5 @@
+# 1_0_2
+- SSEMU SUPORT + Bug fix
+
 # 1_0_1
 - SSEMU SUPORT
