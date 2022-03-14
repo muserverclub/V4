@@ -1,3 +1,6 @@
+# 1_0_3
+- SSEMU SKILL BLOCK
+
 # 1_0_2
 - SSEMU SUPORT + Bug fix
 
