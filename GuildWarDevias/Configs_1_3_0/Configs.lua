@@ -51,6 +51,13 @@ GuildWarDevias.CastleRange = {
     },
 }
 
+GuildWarDevias.BlockGuild = {
+    Enable = false,
+    Mode = 1, -- 0 or 1. | 0-> filter guilds | 1-> exclude guilds
+    GuildsName={}
+}
+
+
     --[[
         ALLIANCE SYSTEM :
         WORKS LIKE CASTLE SIEGE SYSTEM | FUNCIONA COMO O SISTEMA DO CASTLE SIEGE
