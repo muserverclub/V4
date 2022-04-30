@@ -4,10 +4,10 @@ Battle.ShowRequeriment = true
 Battle.CommandCode = 110
 
 Battle.EntraceNPC = {
-    {ID = 239, Map = 79, MapX = 208, MapY = 53, Dir = 1}
+    {ID = 239, Map = 0, MapX = 137, MapY = 133, Dir = 3}
 }
 
-Battle.Strings.npcTitle = "..::Battle::.. 100 HuntPoint's"
+Battle.Strings.npcTitle = "..::Battle::.."
 
 Battle.Strings.playerLeftArea = {
     "[Battle] you left the event area",
