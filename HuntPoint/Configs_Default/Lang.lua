@@ -13,9 +13,9 @@ HuntPoint.Lang.CommandHuntAmount = {
     1
 }
 HuntPoint.Lang.CommandHuntTile = {
-    "Level: %d | Evolução: %d%% | Points: %d + %d (Inativos) | Set: %d/%d%%",
-    "Level: %d | Evolução: %d%% | Points: %d + %d (Inativos) | Set: %d/%d%%",
-    "Level: %d | Evolução: %d%% | Points: %d + %d (Inativos) | Set: %d/%d%%",
+    "Level: %d/%d%% - Points: %d/%d - Set: %d/%d%% - Monsters: %d",
+    "Level: %d/%d%% - Points: %d/%d - Set: %d/%d%% - Monsters: %d",
+    "Level: %d/%d%% - Points: %d/%d - Set: %d/%d%% - Monsters: %d",
     1
 }
 HuntPoint.Lang.HuntPointObtained = {

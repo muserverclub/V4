@@ -1,9 +1,3 @@
-Version 1_0_7
-  [Fix] save hunt level on database
-
-
-
-
-
-Execute on SQL:
-ALTER TABLE greed_huntpoint ADD bigint DEFAULT 0 NOT NULL;
+Version 2_0_0
+  [Fix] agora só é possivel farmar huntpoints em um gameserver exclusivo
+  [Fix] sistema interno otimizado

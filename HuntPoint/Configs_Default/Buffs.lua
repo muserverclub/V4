@@ -1,120 +1,96 @@
-HuntPoint.Buffs[44] = {
-    -- Número do buff no Effect.txt
-    AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Atk Speed", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 100, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 1000, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
-    MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
-    displayErrors = false
-}
 HuntPoint.Buffs[45] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Defense", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 4, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 65000, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt Defense", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 15, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 9999999, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = false, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[46] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Physical Dmg", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 5, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 65000, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt Physical Dmg", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 10, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 9999999, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = false, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[47] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Wiz/Cur Dmg", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 2, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 65000, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt Wiz/Cur Dmg", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 10, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 9999999, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = false, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[48] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt HP", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 1, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 65000, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt HP", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 2.5, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 9999999, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = false, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[49] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Mana", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 1, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 65000, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt Mana", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 7.5, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 9999999, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = false, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[89] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Critical Dmg", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 1000, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 100, -- Valor Máximo que esse buff pode dar
-    IsPercent = true, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt Critical Dmg", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 15000, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 20, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = true, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[90] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt Excellent Dmg", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 1000, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 100, -- Valor Máximo que esse buff pode dar
-    IsPercent = true, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt Excellent Dmg", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 15000, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 20, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = true, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
-    displayErrors = false
-}
-HuntPoint.Buffs[114] = {
-    -- Número do buff no Effect.txt
-    AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt SD", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 400, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 160, -- Valor Máximo que esse buff pode dar
-    IsPercent = false, -- true > Exibe como porcentagem | false > não exibe
-    MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
 HuntPoint.Buffs[121] = {
-    -- Número do buff no Effect.txt
+    -- Nï¿½mero do buff no Effect.txt
     AllowUp = true, -- true > ativa o up | false > desativa o up
-    Name = "Hunt HP Recovery", -- Nome do Buff que será exibido pelo sistema
-    HuntDiv = 2000, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
-    MAX = 100, -- Valor Máximo que esse buff pode dar
-    IsPercent = true, -- true > Exibe como porcentagem | false > não exibe
+    Name = "Hunt HP Recovery", -- Nome do Buff que serï¿½ exibido pelo sistema
+    HuntDiv = 15000, -- Divisor de HuntPoint  | Formula: math.floor((((((TotalDeHunt*ProcentagemDoBuff)/100)/200000)^0.6)*200000*0.5)/Divisor)
+    MAX = 20, -- Valor Mï¿½ximo que esse buff pode dar
+    IsPercent = true, -- true > Exibe como porcentagem | false > nï¿½o exibe
     MinWorkPercent = 1, -- Minimo de porcentagem requerida para aplicar o buf
-    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Máximo Level para usar o comando ( para cada nvel vip )
-    AllowReset = {{190, 9999}, {190, 9999}, {190, 9999}, {190, 9999}}, -- Minimo/Máximo Reset para usar o comando ( para cada nvel vip )
+    AllowLevel = {{400, 400}, {400, 400}, {400, 400}, {400, 400}}, -- Minimo/Mï¿½ximo Level para usar o comando ( para cada nï¿½vel vip )
+    AllowReset = {{0, 9999}, {0, 9999}, {0, 9999}, {0, 9999}}, -- Minimo/Mï¿½ximo Reset para usar o comando ( para cada nï¿½vel vip )
     displayErrors = false
 }
