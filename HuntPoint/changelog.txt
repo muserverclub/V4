@@ -1,3 +1,2 @@
-Version 2_0_0
-  [Fix] agora só é possivel farmar huntpoints em um gameserver exclusivo
-  [Fix] sistema interno otimizado
+Version 2_0_1
+  [Fix] Fixado reset de monstros diario

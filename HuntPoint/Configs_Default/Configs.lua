@@ -1,5 +1,5 @@
 HuntPoint.Switch = true -- true > Ativa o sistema | false > Desativa
-HuntPoint.MainGSCode = 0 -- GSCode do servidor principal onde aconecerá o sistema de farm e battle (IMPORTANT: Só pode haver 1 servidor principal, se você setar multiplos causará erro no banco de dados)
+HuntPoint.MainGSCode = 0 -- GSCode do servidor principal onde aconecerï¿½ o sistema de farm e battle (IMPORTANT: Sï¿½ pode haver 1 servidor principal, se vocï¿½ setar multiplos causarï¿½ erro no banco de dados)
 
 HuntPoint.BuffRaffleDiv = 1000 -- Quantidade de monstros necessario para atualizar os buffs in-game e porcentagem de cada um
 
@@ -8,7 +8,7 @@ HuntPoint.BuffRaffleAfterMaxMonster = false -- Continua transferindo % de buff m
 HuntPoint.BuffPercentSubAdd = 1 -- Porcentagem de acrescimo a cada BuffRaffleDiv
 
 HuntPoint.MaxDayMonster = {
-    -- Máximo de monstros que contam HuntPoint diariamente
+    -- Mï¿½ximo de monstros que contam HuntPoint diariamente
     [0] = 5000, -- Free
     [1] = 7000, -- Vip 1
     [2] = 15000, -- Vip 2
@@ -16,14 +16,14 @@ HuntPoint.MaxDayMonster = {
 }
 
 
-HuntPoint.WeekMonsterCount = 0 -- Quantidade de monstros que o jogador deve matar toda semana para não ser penalizado com perda de hunt
-HuntPoint.WeekTransformPercent = 5 -- Quantidade de HuntPoints (em %) que será transformado em inativos
+HuntPoint.WeekMonsterCount = 1000 -- Quantidade de monstros que o jogador deve matar toda semana para nï¿½o ser penalizado com perda de hunt
+HuntPoint.WeekTransformPercent = 5 -- Quantidade de HuntPoints (em %) que serï¿½ transformado em inativos
 
 HuntPoint.AttMapTime = 21600 -- Tempo em segundos pra sortear os mapas de up
 
 HuntPoint.LevelDiv = 1000 -- Divisor de huntpoint x level
 
-HuntPoint.Command.Code = 109 -- Número do comando para ver status de hun t
+HuntPoint.Command.Code = 109 -- Nï¿½mero do comando para ver status de hun t
 HuntPoint.Command.displayErrors = false
 
 HuntPoint.Maps = {
