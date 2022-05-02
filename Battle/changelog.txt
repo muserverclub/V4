@@ -1,5 +1,2 @@
-Version 2_0_0
-  [+] Pré configurado para usar com HuntPoint (ative apenas no gs do huntpoint)
-
-Version 2_0_1
-  [FIx] Span de tempo de espera
+Version 2_0_2
+  [Fix] Corrigido problema em que o jogador vai para o "limbo" ao morrer dentro do evento

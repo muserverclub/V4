@@ -1,23 +1,23 @@
 Battle.List[1] = {
     Schedule = {
-        -- Quando começa o evento
+        -- Quando comeï¿½a o evento
         Fixed = {
-            -- Horário base, onde é definido o horario random antes de iniciar realmente
+            -- Horï¿½rio base, onde ï¿½ definido o horario random antes de iniciar realmente
             {}
         },
         Random = {
-            -- Horário randômico que é gerado após o horario Fixed ser acionado
-            Min = 0, -- Tempo mínimo
-            Max = 0 -- Tempo máximo
+            -- Horï¿½rio randï¿½mico que ï¿½ gerado apï¿½s o horario Fixed ser acionado
+            Min = 0, -- Tempo mï¿½nimo
+            Max = 0 -- Tempo mï¿½ximo
         }
     },
-    TimeAnnounce = 1, -- Tempo de anúncio, após o horário randômico terminar
-    TimeStand = 1, -- Tempo entre o anúncio e a duração do evento, tempo de espera
-    TimeDuration = 9999999, -- Tempo de duração do evento
-    TimeFinish = 1, -- Tempo de duração do evento
+    TimeAnnounce = 1, -- Tempo de anï¿½ncio, apï¿½s o horï¿½rio randï¿½mico terminar
+    TimeStand = 1, -- Tempo entre o anï¿½ncio e a duraï¿½ï¿½o do evento, tempo de espera
+    TimeDuration = 9999999, -- Tempo de duraï¿½ï¿½o do evento
+    TimeFinish = 1, -- Tempo de duraï¿½ï¿½o do evento
     MinPlayers = 0, -- Minimo de jogadores para o evento funcionar
-    MaxPlayers = 9999, -- Máximo de jogadores dentro do evento
-    Requeriments = { -- Requerimentos necessário para participar
+    MaxPlayers = 9999, -- Mï¿½ximo de jogadores dentro do evento
+    Requeriments = { -- Requerimentos necessï¿½rio para participar
         CustomFunction = function(aIndex)
 
             local RequiredPoints = 1000
