@@ -85,9 +85,9 @@ Duel.Strings = {
     },
 
     [5] = {
-        ".. :: Duel - Score :: ..",
-        ".. :: Duelo - Placar :: ..",
-        ".. :: Duelo - Puntuación :: ..",
+        ".. :: Duel - %d %s :: ..",
+        ".. :: Duelo - %d %s :: ..",
+        ".. :: Duelo - %d %s :: ..",
     },
 
     [6] = {
