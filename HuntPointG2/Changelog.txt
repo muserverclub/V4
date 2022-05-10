@@ -1,0 +1,4 @@
+Version 1_0_1
+  [Fix] Não é mais possivel usar o /battle dentro do evento
+  [Fix] Drop de stardust apenas no gs do hunt
+  [Updated] Ordem de farm: Inativo - HuntPoint -> Monstros Diario - HuntPoint 
