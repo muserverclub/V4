@@ -1,25 +1,25 @@
 ZombieEvent.Switch = true -- true > enable | false > disable
 ZombieEvent.KillMode = true -- true > activates infection mode when killing players | false > infection mode on hitar player
-ZombieEvent.Schedule = {
+ZombieEvent.Schedule = { -- Event start times
 	{hour = 6, min = 30, sec = 0},
 	{hour = 14, min = 30, sec = 0},
 	{hour = 22, min = 30, sec = 0}
 }
--- Event start times
+
 ZombieEvent.Announce = 300 -- Event announcement time (in seconds)
+ZombieEvent.Stand = 60 -- Event announcement time (in seconds)
 ZombieEvent.Duration = 300 -- Event duration (in seconds)
 ZombieEvent.MinPlayers = 2 -- Minimum number of participants for the event to work
 
 ZombieEvent.InfectCycle = 60 -- Time cycle in which a new player will be automatically infected if no one has been infected
 
-ZombieEvent.Area = {
+ZombieEvent.Area = { -- Area where the event will take place
 	Map = 4,
 	MapXMin = 0,
 	MapXMax = 63,
 	MapYMin = 0,
 	MapYMax = 63
 }
--- Area where the event will take place
 
 ZombieEvent.BlackoutInterval = 10 -- Cycle ( in seconds ) in which the blindness debuff will be applied to players
 ZombieEvent.BlackoutTime = 5 -- duration of debuff
@@ -29,56 +29,74 @@ ZombieEvent.TheftZombiePercentReward = 30 -- Percentage of points a zombie steal
 ZombieEvent.PlayerFixedReward = 50 -- Points a player earns by killing a zombie
 ZombieEvent.TheftPlayerPercentReward = 0 -- Percentage of points a player steals when killing a zombie
 
-ZombieEvent.MonsterReward = {
-	[136] = {50, 10},
-	[137] = {10, 50},
-	[141] = {5, 100}
+ZombieEvent.MonsterReward = { -- List of monsters that will be summoned in the event
+	[136] = {
+		Count = 20, 
+		Points = 10
+	},
+	[137] = {
+		Count = 8, 
+		Points = 25
+	},
+	[141] = {
+		Count = 2,
+		Points = 100
+	}
 }
--- List of monsters that will be summoned in the event
 -- [MonsterId] = {Amount of monsters,Points per kill}
 
 ZombieEvent.RespawnTime = 60 -- Respawn time of monsters after being killed
 
-ZombieEvent.Reward = {
+ZombieEvent.DisablePermissions = {2, 3, 7, 8, 9, 10, 12}
+
+ZombieEvent.Reward = { -- List of rewards for ranking
 	[1] = {GoblinPoint = 2000},
 	[2] = {GoblinPoint = 1500},
 	[3] = {GoblinPoint = 1050},
 	[4] = {GoblinPoint = 850},
 	[5] = {GoblinPoint = 600}
 }
--- List of rewards for ranking
 -- [Rank position] = { Rewards }
 
-ZombieEvent.EntraceNPC = {
-	ID = 566, -- Monster ID in monster.txt
+ZombieEvent.EntraceNPC = { -- Event access NPC configuration
+	CreateOnInit = false, -- true, spawna npc ao iniciar script | false, cria apenas no periodo de anuncio
+	ID = 239, -- Monster ID in monster.txt
 	Positions = {
-		{Map = 4, MapX = 200, MapY = 77, MapR = 2}
+		{Map = 0, MapX = 140, MapY = 125, MapR = 2}
 	}
 	-- Locations where the NPC will appear
 }
--- Event access NPC configuration
 
-ZombieEvent.MoveNPC = {
+ZombieEvent.RespawnArea = { Map = 0, MapXMin = 137, MapYMin = 131, MapXMax = 145, MapYMax = 137 }
+
+ZombieEvent.MoveNPC = { -- Move NPC settings on event
+	CreateOnInit = false, -- true, spawna npc ao iniciar script | false, cria apenas quando o evento começa
 	ID = 239, -- Monster ID in monster.txt
-	Positions = {}
-	-- Locations where the NPC will appear
-	--{MapX = 82, MapY = 173, MapR = 3},
-	--{MapX = 92, MapY = 250, MapR = 3},
-	--{MapX = 99, MapY = 181, MapR = 3},
-	--{MapX = 118, MapY = 233, MapR = 3},
-	--{MapX = 129, MapY = 195, MapR = 3},
-	--{MapX = 112, MapY = 165, MapR = 3}
+	Positions = { -- Locations where the NPC will appear
+	},	
+	{MapX = 82, MapY = 173, MapR = 3},
+	{MapX = 92, MapY = 250, MapR = 3},
+	{MapX = 99, MapY = 181, MapR = 3},
+	{MapX = 118, MapY = 233, MapR = 3},
+	{MapX = 129, MapY = 195, MapR = 3},
+	{MapX = 112, MapY = 165, MapR = 3}
 }
--- Move NPC settings on event
 
-ZombieEvent.MoveLocations = {} -- Places it will be moved to by clicking on the NPC
---{MapX = 82, MapY = 173},
---{MapX = 92, MapY = 250},
---{MapX = 99, MapY = 181},
---{MapX = 118, MapY = 233},
---{MapX = 129, MapY = 195},
---{MapX = 112, MapY = 165}
+ZombieEvent.MoveLocations = { -- Places it will be moved to by clicking on the NPC
+	{MapX = 82, MapY = 173},
+	{MapX = 92, MapY = 250},
+	{MapX = 99, MapY = 181},
+	{MapX = 118, MapY = 233},
+	{MapX = 129, MapY = 195},
+	{MapX = 112, MapY = 165}
+}
 
+ZombieEvent.Strings.StandTime = {
+	"A invasão está prestes a começar, prepare-se",
+	"A invasão está prestes a começar, prepare-se",
+	"A invasão está prestes a começar, prepare-se",
+	0
+}
 ZombieEvent.Strings.OutArea = {
 	"You abandoned the invasion.",
 	"Você abandonou a invasão.",
@@ -161,4 +179,16 @@ ZombieEvent.Strings.NpcOnlyZombie = {
 	"Only zombies can use npc",
 	"Apenas zumbis podem usar o npc",
 	"Solo los zombis pueden usar npc"
+}
+
+ZombieEvent.Strings.NPCTooLate = {
+	"Você chegou muito tarde",
+	"Você chegou muito tarde",
+	"Você chegou muito tarde",
+}
+
+ZombieEvent.Strings.NPCTooEarly = {
+	"Você chegou muito cedo",
+	"Você chegou muito cedo",
+	"Você chegou muito cedo",
 }
