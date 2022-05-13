@@ -73,13 +73,13 @@ ZombieEvent.MoveNPC = { -- Move NPC settings on event
 	CreateOnInit = false, -- true, spawna npc ao iniciar script | false, cria apenas quando o evento começa
 	ID = 239, -- Monster ID in monster.txt
 	Positions = { -- Locations where the NPC will appear
+		{MapX = 82, MapY = 173, MapR = 3},
+		{MapX = 92, MapY = 250, MapR = 3},
+		{MapX = 99, MapY = 181, MapR = 3},
+		{MapX = 118, MapY = 233, MapR = 3},
+		{MapX = 129, MapY = 195, MapR = 3},
+		{MapX = 112, MapY = 165, MapR = 3}
 	},	
-	{MapX = 82, MapY = 173, MapR = 3},
-	{MapX = 92, MapY = 250, MapR = 3},
-	{MapX = 99, MapY = 181, MapR = 3},
-	{MapX = 118, MapY = 233, MapR = 3},
-	{MapX = 129, MapY = 195, MapR = 3},
-	{MapX = 112, MapY = 165, MapR = 3}
 }
 
 ZombieEvent.MoveLocations = { -- Places it will be moved to by clicking on the NPC
