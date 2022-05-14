@@ -10,3 +10,5 @@ CREATE TABLE dbo.greed_huntpoint
 	buffs text COLLATE SQL_Latin1_General_CP1_CI_AS DEFAULT '' NOT NULL,
 	inactive int DEFAULT 0 NOT NULL
 );
+
+alter table greed_huntpoint add disabled [bit] DEFAULT 1 NOT NULL;

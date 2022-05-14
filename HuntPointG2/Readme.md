@@ -3,7 +3,8 @@
 # Adicionar no CommandManager.txt
 109       "/hunt" \
 110       "/battle" \
-111       "/disable"
+111       "/disable" \
+112       "/enable"
 
 # Change in Data/Effect.txt
 45        68      14,73       "Scroll of Defense"                   0      0      0      *    *       *        *        * \

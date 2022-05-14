@@ -1,4 +1,5 @@
-Version 1_0_1
-  [Fix] Não é mais possivel usar o /battle dentro do evento
-  [Fix] Drop de stardust apenas no gs do hunt
-  [Updated] Ordem de farm: Inativo - HuntPoint -> Monstros Diario - HuntPoint 
+Version 1_1_2
+  [Fix] Comando /hunt não funciona corretamente no primeiro momento que o jogador entra
+  [Add] Função para desabilitar up de experiencia normal enquanto o hunt está ativo
+  [Add] Comando /enable para habilitar o huntpoint
+  [Updated] Agora as opções de hunt começam desabilitadas, para habilitar é necessario dar o comando /enable

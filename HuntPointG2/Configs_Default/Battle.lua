@@ -2,9 +2,9 @@ HuntPointG2.Battle.Command.Code = 110
 
 -- Areas em que o battle acontece de acordo com a quantidade de participantes
 HuntPointG2.Battle.Area = {
-    { MinUser = 0, MaxUser=1, Map = 41, MapXMin = 224, MapYMin = 174, MapXMax = 255, MapYMax = 255},
-    { MinUser = 1, MaxUser=2, Map = 41, MapXMin = 111, MapYMin = 182, MapXMax = 181, MapYMax = 255},
-    { MinUser = 2, MaxUser=3, Map = 41, MapXMin = 15, MapYMin = 163, MapXMax = 87, MapYMax = 255},
+    { MinUser = 0, MaxUser=1, Map = 41, MapXMin = 228, MapYMin = 179, MapXMax = 245, MapYMax = 246},
+    { MinUser = 1, MaxUser=2, Map = 41, MapXMin = 116, MapYMin = 188, MapXMax = 175, MapYMax = 245},
+    { MinUser = 2, MaxUser=3, Map = 41, MapXMin = 17, MapYMin = 170, MapXMax = 83, MapYMax = 234},
 }
 
 -- Local para onde o jogador é enviado, ao morrer dentro de algum mapa do battle
