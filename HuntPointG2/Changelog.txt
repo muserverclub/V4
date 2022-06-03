@@ -1,5 +1,3 @@
-Version 1_1_2
-  [Fix] Comando /hunt não funciona corretamente no primeiro momento que o jogador entra
-  [Add] Função para desabilitar up de experiencia normal enquanto o hunt está ativo
-  [Add] Comando /enable para habilitar o huntpoint
-  [Updated] Agora as opções de hunt começam desabilitadas, para habilitar é necessario dar o comando /enable
+Version 1_1_3
+  [Fix] Atualização de % ao chegar no level máximo
+  [Fix] Corrigido criação de conta em outros gameservers
