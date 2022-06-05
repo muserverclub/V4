@@ -3,11 +3,11 @@ PluginDllV2.AntiInjection = true -- bypass protection
 
 PluginDllV2.IgnoreFlag = {2} -- Flags ignored by account limit | 0 > Online | 1 > OffAttack | 2 > OffStore
 
-PluginDllV2.Limit.Total = -1 -- Total accounts that can be connected per pc
-PluginDllV2.Limit[0] = -1 -- Maximum free accounts per pc
-PluginDllV2.Limit[1] = -1 -- Maximum vip1 accounts per pc
-PluginDllV2.Limit[2] = -1 -- Maximum vip2 accounts per pc
-PluginDllV2.Limit[3] = -1 -- Maximum vip3 accounts per pc
+PluginDllV2.Limit.Total = 10 -- Total accounts that can be connected per pc
+PluginDllV2.Limit[0] = 10 -- Maximum free accounts per pc
+PluginDllV2.Limit[1] = 10 -- Maximum vip1 accounts per pc
+PluginDllV2.Limit[2] = 10 -- Maximum vip2 accounts per pc
+PluginDllV2.Limit[3] = 10 -- Maximum vip3 accounts per pc
 
 PluginDllV2.Strings.AntiInjection = {
   "[System] Plugin.dll not found!! Disconecting user...",
