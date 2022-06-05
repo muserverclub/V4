@@ -1,3 +1,16 @@
+
+alter table MEMB_STAT add offlineflag Int DEFAULT(0) NOT NULL;
+GO
+
+alter table MEMB_INFO add hwid varchar(100) DEFAULT('0') NOT NULL;
+GO
+
+alter table MEMB_INFO add pcname varchar(100) DEFAULT('0') NOT NULL;
+GO
+
+ALTER TABLE MEMB_INFO ADD [auth2fa] bit NOT NULL DEFAULT(0);
+GO
+
 -- DROP TABLE dbo.Greed_Fa2auth;
 
 CREATE TABLE dbo.Greed_Fa2auth
