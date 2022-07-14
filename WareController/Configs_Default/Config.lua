@@ -3,18 +3,18 @@ WareController.Switch = true -- true > enable | false > disabled
 WareController.FreeExtWare = 2 -- Free Wares
 
 WareController.CommandSelect = {
-  Code = 100 -- CommandManager.txt code
+  Code = 200 -- CommandManager.txt code
 }
 --Command config to select  warehouse
 
 WareController.CommandOpen = {
-  Code = 101, -- CommandManager.txt code
-  ReqMoney = {10000, 10000, 10000, 10000}
+  Code = 201, -- CommandManager.txt code
+  AllowNotSafeZone = {false,true,true,true}
 }
 --Command config to open warehouse
 
 WareController.CommandBuy = {
-  Code = 102, -- CommandManager.txt code
+  Code = 202, -- CommandManager.txt code
   ReqWCoinC = {500, 500, 500, 500}
 }
 --Command config to buy warehouse
